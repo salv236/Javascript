@@ -41,7 +41,7 @@ function lookUpProfile(name, prop){
 for (var x = 0; x < contacts.length; x++){
     //if firstname parametre matches what has been provided in the array
     if (contacts[x].firstName === name) {
-        // if a value has been assigned to the property returns a boolean of true
+        // if it has the property specified in prop and matches return true.
         if (contacts[x].hasOwnProperty(prop)) {
             return contacts[x][prop];
         } else {
