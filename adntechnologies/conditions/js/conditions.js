@@ -9,7 +9,13 @@ if (num1 < num2 && num1 < num3) {
     document.write(num1 + " is less than " + num2 + " and " + num3 );  
 } else if (num1 > num2 && num1 > num3) {
     document.write(num1 + " is greather than " + num2 + " and " + num3 );
-} else {
+} else if (num1 > num2 && num1 > num3) {
+    document.write(num1 + " is greather than " + num2 + " and " + num3);
+} else if (num1 > num2 && num1 != num3) {
+    document.write(num1 " is greather than" + num2 + "but is less than " + num3);
+}
+
+else {
     document.write(num1 + " is not greater or less than " +num2 + " and " +  num3 + "\n" );
 }
 
