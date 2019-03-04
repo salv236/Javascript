@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Nested for loop </title>
+    <script> 
+    
+    function randomRange(myMin, myMax) {
+
+    var maxNumber = Math.max(myMin, myMax);
+    var minNumber = Math.min(myMin, myMax);
+  /*returns a random number that's greater than or equal to the minimum number, and is less than or equal to maximum 
+     (high - low + 1) + low*/
+  return Math.floor(Math.random()* (maxNumber - minNumber + 1) + minNumber); // Change this line
+  
+  }
+
+// Change these values to test your function
+var myRandom = randomRange(5, 15);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
