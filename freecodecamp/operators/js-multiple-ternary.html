@@ -8,15 +8,17 @@
     <script> 
         function checkSign(num) {
  
- // positve negative or 0
- 
- return (num>0)? num + "is greater than 0" : "num is less than 0 "
- (num ==0)? num + " is equal to 0 " : num + " is not equal to zero"
- (num <0)? num + "is less than 0" : num + " is not less than 0";
- 
- }
- 
- checkSign(10)
+  // positve negative or 0
+
+  // return (num == 0)? num + " is equal to zero" : num + " is not equal to zero "
+  // (num >0)? num + " is greater than zero " ;
+
+//  
+
+return (num >0) ? "positive" :(num < 0)? "negative" :"zero";
+}
+
+checkSign(10);
 
     </script>
 </head>
