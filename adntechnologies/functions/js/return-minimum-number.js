@@ -1,5 +1,7 @@
-function minimumNumber(min, max) {
+// return the minimum value
 
+function minimumNumber(min, max) {
+    return min;
 }
 
-minimumNumber(10, 50);
+console.log(minimumNumber(10, 50));
