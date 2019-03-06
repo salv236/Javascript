@@ -7,7 +7,7 @@ function convertToFarenheight(celcius) {
     return tempF;
 }
 
-console.log(convertToFarenheight(12));
+console.log(convertToFarenheight(Math.floor(12)));
 
 
 
@@ -19,8 +19,8 @@ console.log(convertToFarenheight(12));
      return tempC;
    }
 
-   convertToCelcius(20);
+   console.log(convertToCelcius(20));
 
-   console.log("Temperature in Celcius is " + convertToCelcius(20) + " Temperature in farenheight is " + convertToFarenheight(10));
+   console.log("Temperature in Celcius is " + convertToCelcius(20) + " Temperature in farenheight is " + convertToFarenheight(12));
 
 
