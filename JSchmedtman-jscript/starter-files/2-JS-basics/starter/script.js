@@ -66,25 +66,44 @@
 
 // OPERATOR PRECEDENCE
 
-var now =  2018;
-var yearJohn = 1989;
-var fullAge = 18;
+// var now =  2018;
+// var yearJohn = 1989;
+// var fullAge = 18;
 
 // multiple operators
-var isFullAge = (now - yearJohn) >= fullAge;
-console.log(isFullAge);
+// var isFullAge = (now - yearJohn) >= fullAge;
+// console.log(isFullAge);
 
-var ageJohn = now - yearJohn;
-var ageMark = 35;
-var average = (ageJohn + ageMark) / 2;
-console.log(average);
+// var ageJohn = now - yearJohn;
+// var ageMark = 35;
+// var average = (ageJohn + ageMark) / 2;
+// console.log(average);
 
 // multiple assignments
 
-var x, y;
+// var x, y;
 
-x = y =  (3+5) * 4 -6; // 8 * 4 - 6 // 32 - 6 = 26
-console.log(x, y);
+// x = y =  (3+5) * 4 -6; // 8 * 4 - 6 // 32 - 6 = 26
+// console.log(x, y);
+
+//IF-ELSE STAEMENT
+
+let firstname = 'John';
+let civilStatus = 'single';
+
+if(civilStatus === 'married') {
+    console.log(firstname + ' is married!');
+} else {
+    console.log(firstname + ' is' + ' ' + civilStatus)
+}
+
+let isMarried = true;
+
+if(isMarried) {
+    console.log(firstname + ' is married!');
+} else {
+    console.log(firstname + ' is' + ' ' + civilStatus)
+}
 
 
 
