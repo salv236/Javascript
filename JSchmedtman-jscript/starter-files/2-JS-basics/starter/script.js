@@ -107,19 +107,66 @@
 
 // BOOLEAN LOGIC
 
-let firstName = 'john';
-let age = 16;
+// let firstName = 'john';
+// let age = 16;
 
-if(age <13) {
- console.log(firstName + ' is a boy');
-}  else if (age >= 13 && age <20) {
-    console.log(firstName + ' is a teenager');
-} else if(age >=20 && age <30) {
-    console.log(firstName + ' is a young man');
-} else {
-    console.log(firstName + ' is a man');
+// if(age <13) {
+//  console.log(firstName + ' is a boy');
+// }  else if (age >= 13 && age <20) {
+//     console.log(firstName + ' is a teenager');
+// } else if(age >=20 && age <30) {
+//     console.log(firstName + ' is a young man');
+// } else {
+//     console.log(firstName + ' is a man');
+// }
+
+//TERNARY OPERATOR
+
+// let firstName = 'John';
+// let age = 20;
+
+// age >=18 ? console.log(firstName + ' drinks beer')
+// : console.log(firstName + ' drinks juice'); 
+
+// let drink = age >= 18 ? 'beer' : 'juice';
+
+// console.log(drink);
+
+// SWITCH STATEMENT
+
+let job =  'driver';
+let firstName = 'John';
+
+switch(job) {
+    case 'teacher':
+    console.log(firstName + ' teaches kids how to code');
+    break;
+    case 'designer':
+    console.log(firstName + ' designs web applications');
+    break;
+    case 'driver':
+    console.log(firstName + ' drives uber cars');
+    break;
 }
 
+
+
+// let firstName = 'john';
+let age = 12;
+
+
+switch (true) {
+ case age <13:
+ console.log(firstName + ' is a boy');
+ break;
+ case age > 13 && age < 20:
+ console.log(firstName + ' is a teenager');
+ break;
+ case age >= 20 && age < 30:
+ console.log(firstName + ' is a man');
+ break;
+
+}
 
 
 
