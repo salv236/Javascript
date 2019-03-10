@@ -152,20 +152,45 @@ switch(job) {
 
 
 // let firstName = 'john';
-let age = 12;
+// let age = 12;
 
 
-switch (true) {
- case age <13:
- console.log(firstName + ' is a boy');
- break;
- case age > 13 && age < 20:
- console.log(firstName + ' is a teenager');
- break;
- case age >= 20 && age < 30:
- console.log(firstName + ' is a man');
- break;
+// switch (true) {
+//  case age <13:
+//  console.log(firstName + ' is a boy');
+//  break;
+//  case age > 13 && age < 20:
+//  console.log(firstName + ' is a teenager');
+//  break;
+//  case age >= 20 && age < 30:
+//  console.log(firstName + ' is a man');
+//  break;
 
+// }
+
+
+// TRUTHY FALSY AND EQUALITY OPERATORS
+
+// falsy values = null, undefined, 0, NaN, ''
+// truthy = not falsy values
+// === strict equality
+// == type coercion meaning it converts data types 
+
+var height;
+
+height = 23;
+
+if (height || height === 0) {
+    console.log(' variable is defined');
+} else {
+    console.log('variable has not been defined');
+}
+
+// equality operators
+
+//coercion occurence string to integer means condition will be true
+if (height == '23') {
+    console.log('== does type coercion');
 }
 
 
