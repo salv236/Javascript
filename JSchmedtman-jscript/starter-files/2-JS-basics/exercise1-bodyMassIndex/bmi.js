@@ -1,0 +1,17 @@
+// weight
+
+let markMass = 75;
+let johnMass = 82;
+
+//height
+let johnHeight = 175;
+let markHeight = 190;
+
+//bmi
+
+let bmiForJohn = johnMass / (johnHeight * johnHeight);
+let bmiForMark = markMass /(markHeight * markHeight);
+
+let heaviest =  bmiForMark > bmiForJohn;
+
+console.log('is Mark\'s BMI larger than John\'s ' + ' ' + heaviest);
