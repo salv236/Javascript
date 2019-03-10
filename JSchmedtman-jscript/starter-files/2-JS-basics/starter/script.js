@@ -88,22 +88,40 @@
 
 //IF-ELSE STAEMENT
 
-let firstname = 'John';
-let civilStatus = 'single';
+// let firstname = 'John';
+// let civilStatus = 'single';
 
-if(civilStatus === 'married') {
-    console.log(firstname + ' is married!');
+// if(civilStatus === 'married') {
+//     console.log(firstname + ' is married!');
+// } else {
+//     console.log(firstname + ' is' + ' ' + civilStatus)
+// }
+
+// let isMarried = true;
+
+// if(isMarried) {
+//     console.log(firstname + ' is married!');
+// } else {
+//     console.log(firstname + ' is' + ' ' + civilStatus)
+// }
+
+// BOOLEAN LOGIC
+
+let firstName = 'john';
+let age = 16;
+
+if(age <13) {
+ console.log(firstName + ' is a boy');
+}  else if (age >= 13 && age <20) {
+    console.log(firstName + ' is a teenager');
+} else if(age >=20 && age <30) {
+    console.log(firstName + ' is a young man');
 } else {
-    console.log(firstname + ' is' + ' ' + civilStatus)
+    console.log(firstName + ' is a man');
 }
 
-let isMarried = true;
 
-if(isMarried) {
-    console.log(firstname + ' is married!');
-} else {
-    console.log(firstname + ' is' + ' ' + civilStatus)
-}
+
 
 
 
