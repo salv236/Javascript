@@ -12,7 +12,7 @@
    var date_2 = new Date(2015, 5, 8, 14, 50,25);
 
    if(date_1 == date_2) {
-    var actualDate = date_1.setTime(getTime(date_1));   
+    date_1 = setTime(date_1.getTime());
     console.log(actualDate);
    } else {
        console.log('none');
