@@ -9,6 +9,7 @@ function addArray() {
      total += numbers[i];
  }
 
+ // console.log(numbers.length-1); 
  console.log(total);
  
 }
