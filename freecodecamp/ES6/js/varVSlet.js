@@ -40,3 +40,20 @@ function letTest() {
     }
     
     checkScope();
+
+    // CODE INVOLVES HOISTING
+
+/*for(var i = 0, i<3;i++) carries out like this: 
+i === 0, is it less than 3? yes i ===1 
+now i === 1, is it less than 3? yes i ===2
+ now i === 2, is it less than 3? yes i ===3now then stopped. is this correct?*/
+    var printNumTwo;
+for (var i = 0; i < 3; i++) {
+ // i now calls the function "printNumTwo" is i (currently 2) less than 3? yes print 3
+    if(i === 2){
+    printNumTwo = function() {
+      return i; //hoisted variable
+    };
+  }
+}
+console.log(printNumTwo());
