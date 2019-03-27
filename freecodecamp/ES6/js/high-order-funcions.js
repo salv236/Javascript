@@ -1,5 +1,7 @@
 // high order functions are predefined functions where you can pass a function inside
+// further reading https://www.airpair.com/javascript/posts/mastering-es6-higher-order-functions-for-arrays
 
+// EXAMPLE1
 /*FBPosts = name of the array
   post = parametre referencing the index in the array 
   */
@@ -8,6 +10,7 @@
 //   })
 
 
+//EXAMPLE2
 /* FBPosts = 
   */
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -17,6 +20,23 @@
 // });
 
 // console.log(evenNumbers);
+
+/////////////////////////////////
+//EXAMPLE 3
+
+//callback =  nested function
+function sing(callback) {
+    console.log('la la la');
+    callback();
+}
+// meow = the callback function     
+    function meow() {
+        console.log('meow meow');
+    }
+
+   // meow() =  callback()
+    sing(meow);
+///////////////////////////////////
 
 //EXERCISE
 
