@@ -44,11 +44,11 @@ const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
 const squareList = (arr) => {
   "use strict";
   // change code below this line
-  const squaredIntegers = realNumberArray.filter((number)=>
-  return number.isInteger(number)?number: false;
-  number.map(function(){
-    return number;
-  });
+  const squaredIntegers = realNumberArray.filter( realNumber =>
+    // if its a whole number and positive
+    Number.isInteger(realNumber) && realNumber > 0 ) // filter end;
+  // new array with square root of positive numbers
+  squaredIntegers.map(Math.sqrt(squaredIntegers));
 
   // change code above this line
   return squaredIntegers;
@@ -56,4 +56,3 @@ const squareList = (arr) => {
 // test your code
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
-
