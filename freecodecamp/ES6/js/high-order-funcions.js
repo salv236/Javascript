@@ -25,17 +25,17 @@
 //EXAMPLE 3
 
 //callback =  nested function
-function sing(callback) {
-    console.log('la la la');
-    callback();
-}
+// function sing(callback) {
+//     console.log('la la la');
+//     callback();
+// }
 // meow = the callback function     
-    function meow() {
-        console.log('meow meow');
-    }
+    // function meow() {
+    //     console.log('meow meow');
+    // }
 
    // meow() =  callback()
-    sing(meow);
+    // sing(meow);
 ///////////////////////////////////
 
 //EXERCISE
@@ -44,11 +44,16 @@ const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
 const squareList = (arr) => {
   "use strict";
   // change code below this line
-  const squaredIntegers = arr;
-  squaredIntegers.filter((number)=> number(Math.sqrt));
+  const squaredIntegers = realNumberArray.filter((number)=>
+  return number.isInteger(number)?number: false;
+  number.map(function(){
+    return number;
+  });
+
   // change code above this line
   return squaredIntegers;
 };
 // test your code
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
+
