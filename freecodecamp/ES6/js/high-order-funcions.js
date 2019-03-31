@@ -44,14 +44,43 @@ const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
 const squareList = (arr) => {
   "use strict";
   // change code below this line
-  const squaredIntegers = realNumberArray.filter( realNumber =>
+  const squaredIntegers = arr.filter(realNumber =>
     // if its a whole number and positive
-    Number.isInteger(realNumber) && realNumber > 0 ) // filter end;
+    Number.isInteger(realNumber) && realNumber >= 0 ) // filter end;
   // new array with square root of positive numbers
-  squaredIntegers.map(Math.sqrt(squaredIntegers));
+  const result = squaredIntegers.map(num => Math.pow( num, 2));
 
   // change code above this line
-  return squaredIntegers;
+  return result;
+};
+// test your code
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+// JUDIT SHORTER CONCISE VERSIONS
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+const squareList = (arr) => {
+  "use strict";
+  // if its a whole number and positive, new array with square root of positive numbers
+  return arr.filter( realNumber =>
+    Number.isInteger(realNumber) && realNumber >= 0 ).map(num => Math.pow( num, 2));
+};
+// test your code
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+//OR
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+const squareList = (arr) => {
+  "use strict";
+  // change code below this line
+  const squaredIntegers = arr.filter( realNumber =>
+    // if its a whole number and positive, new array with square root of positive numbers
+    Number.isInteger(realNumber) && realNumber >= 0 ).map(num => Math.pow( num, 2)) 
+  // change code above this line
+  return squaredIntegers ;
 };
 // test your code
 const squaredIntegers = squareList(realNumberArray);
