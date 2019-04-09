@@ -36,6 +36,30 @@ let{s: sport, t: travel, m: market} = hobbies;
 
 console.log('favorite sport: ' + sport + ' favorite country: ' + travel+ ' favorite financial market: ' + market);
 
+//EXAMPLE 4 SKIPPING ARRAY ITEMS WITH DESTRUCTURING
+
+let people = ['salvatore', 'joe', 'ro'];
+
+let[,, sister] = people;
+
+console.log(sister);
+
+//EXERCISE 5 SWAPPING VARIABLES
+
+
+let width = 300;
+let height = 400;
+const landscape = true;
+
+console.log(`${width} x ${height}`); // 300 x 400
+
+if (landscape) {
+    // Swap the variables - width becomes height & height becomes width
+    [width, height] = [height, width];
+  
+    console.log(`${width} x ${height}`); // 400 x 300
+}
+
 
   // EXERCISE
 
@@ -47,11 +71,9 @@ console.log('favorite sport: ' + sport + ' favorite country: ' + travel+ ' favor
   function getTempOfTmrw(avgTemperatures) {
     "use strict";
     // change code below this line
-    const tempOfTomorrow = avgTemperatures; // change this line
-    const {today, tomorrow} = tempOfTomorrow;
+    const{tomorrow: tempOfTomorrow } = avgTemperatures ; // destructuring and assigning new variable
     // change code above this line
     return tempOfTomorrow;
   }
   
   console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
-
