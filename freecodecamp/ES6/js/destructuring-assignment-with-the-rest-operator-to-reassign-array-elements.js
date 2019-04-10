@@ -10,8 +10,8 @@ console.log(arr); // [3, 4, 5, 7]
 const source = [1,2,3,4,5,6,7,8,9,10];
 function removeFirstTwo(list) {
   "use strict";
-  // change code below this line
-  arr[a,b, ...arr] = list; // change this
+  // a=1, b=2, ..rest =  rest of elements
+ const[a, b, ...arr] = list;
   // change code above this line
   return arr;
 }
