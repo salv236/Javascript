@@ -1,4 +1,7 @@
-// further reading https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+/* further reading https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+                  https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f
+                  https://wesbos.com/destructuring-objects/
+                  https://javascript.info/destructuring-assignment#object-destructuring */
 
 //EXAMPLE 1 - OBJECT DESTRUCTURING
 
@@ -44,8 +47,26 @@ let[,, sister] = people;
 
 console.log(sister);
 
-//EXERCISE 5 SWAPPING VARIABLES
+//EXAMPLE 5 - NESTED OBJECT DESTRUCTURING
 
+const wes = {
+  first: 'Wes',
+  last: 'Bos',
+  links: {
+    social: {
+      twitter: 'https://twitter.com/wesbos',
+      facebook: 'https://facebook.com/wesbos.developer',
+    },
+    web: {
+      blog: 'https://wesbos.com'
+    }
+  }
+};
+// extract properties twitter & facebook
+const { twitter, facebook } = wes.links.social;
+console.log(twitter, facebook);
+
+//EXAMPLE 6 - SWAPPING VARIABLES
 
 let width = 300;
 let height = 400;
@@ -59,6 +80,27 @@ if (landscape) {
   
     console.log(`${width} x ${height}`); // 400 x 300
 }
+
+// EXAMPLE 7 - OBJECT DESTRUCTING VARIABLE ASSIGNMENT
+
+let country = 'Canada';
+let firstname = 'John';
+let lastname = 'Doe';
+
+const student = {
+    firstname: 'Glad',
+    lastname: 'Chinda',
+    country: 'Nigeria'
+};
+
+// Reassign firstname and lastname using destructuring
+/*Enclose in a pair of parentheses, since this is an assignment expression
+use of (target specific properties in an object) in destructure statement to avoid
+extracting from let declarations */
+({ firstname, lastname } = student);
+
+// country remains unchanged (Canada)
+console.log(firstname, lastname, country); // Glad Chinda Canada
 
 
   // EXERCISE
