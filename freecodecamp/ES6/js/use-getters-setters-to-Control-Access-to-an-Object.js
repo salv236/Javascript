@@ -3,27 +3,30 @@
 function makeClass() {
   "use strict";
   /* Alter code below this line */
-  class Thermostat {
-    constructor(Farenheight) {
-    this.Farenheight = Farenheight;
+  
+  class Thermostat{
+    constructor(farenheit){
+      this.farenheit = farenheit;
     }
-  }
-
-  get Celsius() {
-   return this.Farenheight;
-  }
-
-  set Celsius(newValue) {
-   this.newValue = Farenheight;
+    // get & return farenhieght
+    get temperature(){
+      return 5 / 9 * (this.farenheit - 32);
+    }
+    // set and return temperature to celsius
+    set temperature(celsius){
+      this.farenheit = celsius * 9.0 / 5 + 32;
+    }
   }
 
   /* Alter code above this line */
   return Thermostat;
 }
+
 const Thermostat = makeClass();
-const thermos = new Thermostat(76); // setting in Fahrenheit scale
+const thermos = new Thermostat(76); // setting in F from getter
+//get the F value & convert to C using the getter formula
 let temp = thermos.temperature; // 24.44 in C
-thermos.temperature = 26;
+thermos.temperature = 26;  // configured from setter
 temp = thermos.temperature; // 26 in C
 
 //EXAMPLE1
@@ -65,7 +68,3 @@ class Car {
 
 const ferrari = new Car( red ); // creates instance of a car class called ferrari
 console.log(`I love my new ${ferrari.shade = 'black') ferrari`);
-
-
-
-
