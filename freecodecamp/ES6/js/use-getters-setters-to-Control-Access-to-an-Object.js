@@ -8,11 +8,11 @@ function makeClass() {
     constructor(farenheit){
       this.farenheit = farenheit;
     }
-    // get & return farenhieght
+    // get & return farenhieght to celcius
     get temperature(){
       return 5 / 9 * (this.farenheit - 32);
     }
-    // set and return temperature to celsius
+    // set new temperature value in farenheight
     set temperature(celsius){
       this.farenheit = celsius * 9.0 / 5 + 32;
     }
