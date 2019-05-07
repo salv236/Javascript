@@ -15,13 +15,15 @@ let nestedArray = [ // top, or first level - the outer most array
   ];
 
   //exercise
+   let myNestedArray = [     // level 1
+    ['unshift', false, 1, 2, 3, 'complex', 'nested',      // level 2
+       ['loop', 'shift', 6, 7, 1000, 'method', 'deep',     // level 3
+          ['concat', false, true, 'spread', 'array', 'deeper',     // level 4
+             ['mutate', 1327.98, 'splice', 'slice', 'push', 'deepest']     // level 5
+          ]
+       ]
+    ]
+  ]
 
-  let myNestedArray = [
-    // change code below this line
-    ['unshift', false, 1, 2, 3, 'complex', 'nested'],
-    ['loop', 'shift', 6, 7, 1000, 'method'],
-    ['concat', false, true, 'spread', 'array'],
-    ['mutate', 1327.98, 'splice', 'slice', 'push'],
-    ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
-    // change code above this line
-  ];
+
+  
