@@ -21,12 +21,14 @@ let user = {
   function addFriend(userObj, friend) {
     // change code below this line  
     let result = '';
-    for(friend in userObj){
-      if(user.data.friends){
-        result.push(user.data.friend);
-      }
+    const output = userObj.data.friend;
+    output.push(friend);
+
+       return output;
+        //result.push(user.data.friend);
+
     // change code above this line
-    }
+    
   }
   
   console.log(addFriend(user, 'Pete'));
