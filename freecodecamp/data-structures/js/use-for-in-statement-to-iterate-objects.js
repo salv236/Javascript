@@ -18,17 +18,16 @@ let users = {
 };
 
 function countOnline(obj) {
-    // change code below this line
-    for(obj in users) {
-      console.log(users[obj]);
-      // if the online property === true output the value
-     if(users[obj].online === true){
-       return users[obj];
-       //console.log(obj);
-     } 
-  
-    // change code above this line
+  // iterator count used to calc no: of online  -true
+  let count = 0;
+  // obj =  entire objet, user = child objects i.e. Alain, Jeff e.t.c.
+  for (let user in obj) {
+    // if online is true increment the online true calc
+    if (obj[user].online === true) {
+      count++;
+    }
   }
-
+  return count;
+  // change code above this line
 }
   console.log(countOnline(users));
