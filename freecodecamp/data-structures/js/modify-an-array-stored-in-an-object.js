@@ -19,16 +19,16 @@ let user = {
   };
   
   function addFriend(userObj, friend) {
-    // change code below this line  
-    let result = '';
-    const output = userObj.data.friend;
-    output.push(friend);
-
+    // change code below this line
+       // store path to friends array
+       const output = userObj.data.friends;
+       //insert additiona string in friends
+       output.push(friend);
+ 
        return output;
-        //result.push(user.data.friend);
-
+ 
     // change code above this line
-    
+ 
   }
-  
-  console.log(addFriend(user, 'Pete'));
+ 
+  console.log(addFriend(user, 'Pete')); 
