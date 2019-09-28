@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> global vs local scope </title>
+    <script> 
+ 
+ var changed = 0;
+ 
+ function change(num) {
+  return (num + 5) /3;
+ }
+ // resukt staored within the variable changed
+ changed = change(10);
+
+ /********************/
+
+ var processed = 0;
+
+ function processArg(num) {
+  return (num + 3) /5;
+ }
+
+ processed = processArg(7);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
