@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> global vs local scope </title>
+    <script> 
+
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+    var outerWear = 'shirt';
+    return outerWear;
+}
+
+// local will override global variable
+console.log(myOutfit());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
