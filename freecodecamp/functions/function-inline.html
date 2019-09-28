@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> global vs local scope </title>
+    <script> 
+ 
+ function nextInLine(arr, num) {
+    //add entry to the array
+    arr.push(num); 
+    return arr.shift(); // remove index 0
+ }
+
+ var testArr = [1,2,3,4,5];
+
+ console.log("Before " + JSON.stringify(testArr));
+ console.log(nextInLine(testArr, 6));
+ // after removal of index 0 and addition end of array
+ console.log("After " + JSON.stringify(tesArr));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
