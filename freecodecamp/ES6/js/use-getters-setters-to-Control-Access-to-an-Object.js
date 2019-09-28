@@ -1,3 +1,34 @@
+//EXERCISE
+
+function makeClass() {
+  "use strict";
+  /* Alter code below this line */
+  
+  class Thermostat{
+    constructor(farenheit){
+      this.farenheit = farenheit;
+    }
+    // get & return farenhieght to celcius
+    get temperature(){
+      return 5 / 9 * (this.farenheit - 32);
+    }
+    // set new temperature value in farenheight
+    set temperature(celsius){
+      this.farenheit = celsius * 9.0 / 5 + 32;
+    }
+  }
+
+  /* Alter code above this line */
+  return Thermostat;
+}
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76); // setting in F from getter
+//get the F value & convert to C using the getter formula
+let temp = thermos.temperature; // 24.44 in C
+thermos.temperature = 26;  // configured from setter
+temp = thermos.temperature; // 26 in C
+
 //EXAMPLE1
 
 class Book {
@@ -29,8 +60,11 @@ class Car {
     //color  = private property as it is routed from the constructor to th getter
     return this.color; 
   }
+  set shade(changeColor) {
+   this.color = changeColor;
+  }
   
 }
 
-const ferrari = new Car( red );
-console.log(`I love my new ${ferrari.shade) ferrari`);
+const ferrari = new Car( red ); // creates instance of a car class called ferrari
+console.log(`I love my new ${ferrari.shade = 'black') ferrari`);
