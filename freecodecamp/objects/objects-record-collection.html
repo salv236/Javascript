@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> object - record collection </title>
+    <script> 
+
+let collection = {
+    "2548": {
+      "album": "Slippery When Wet",
+      "artist": "Bon Jovi",
+      "tracks": [ 
+        "Let It Rock", 
+        "You Give Love a Bad Name" 
+      ]
+    },
+    "2468": {
+      "album": "1999",
+      "artist": "Prince",
+      "tracks": [ 
+        "1999", 
+        "Little Red Corvette" 
+      ]
+    },
+    "1245": {
+      "artist": "Robert Palmer",
+      "tracks": [ ]
+    },
+    "5439": {
+      "album": "ABBA Gold"
+    }
+};
+// Keep a copy of the collection for tests
+var collectionCopy = JSON.parse(JSON.stringify(collection));
+
+function updateRecords(id, prop, value) {
+  //if the property value is empty delete the property entry
+    if (value === "") {
+      delete collection[id][prop];
+  }  else if(prop === "tracks") {
+      
+    //if tracks is empty create it  or if it already exists creat assign it an empty array 
+      collection[id][props] = collection[id][prop] || [];
+      // add value to the tracks array
+      collection[id][prop].push(value);
+      // if its not empty or not tracks add value to the property 
+  } else {
+      collection[id][prop] =  value;
+  }
+  
+  return collection;
+}
+
+updateRecords(5439, "artist", "ABBA");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
